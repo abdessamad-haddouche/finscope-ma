@@ -1,0 +1,166 @@
+# ============================================================
+# FINSIGHT MA — .gitignore
+# WSL + Windows 11 + VSCode + Node.js + TypeScript + React
+# ============================================================
+
+
+# ─── ENVIRONMENT VARIABLES & SECRETS ────────────────────────
+.env
+.env.local
+.env.development
+.env.development.local
+.env.test
+.env.test.local
+.env.production
+.env.production.local
+.env.staging
+.env*.local
+*.env
+
+
+# ─── NODE & PACKAGE MANAGERS ────────────────────────────────
+node_modules/
+.npm/
+.pnpm-store/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+*.tgz
+.yarn-integrity
+
+
+# ─── TYPESCRIPT BUILD OUTPUT ─────────────────────────────────
+dist/
+build/
+out/
+*.tsbuildinfo
+*.js.map
+*.d.ts.map
+
+
+# ─── LOGS ────────────────────────────────────────────────────
+logs/
+*.log
+pids/
+*.pid
+*.seed
+*.pid.lock
+
+
+# ─── FINSIGHT MA — UPLOADS & GENERATED FILES ─────────────────
+# User-uploaded financial statements — never commit
+backend/uploads/
+backend/generated_pdfs/
+# Generated file types
+*.pdf
+*.xlsx
+*.xls
+*.csv
+
+
+# ─── PUPPETEER CACHE ─────────────────────────────────────────
+.cache/
+.local-chromium/
+backend/.cache/
+
+
+# ─── REACT & VITE ────────────────────────────────────────────
+frontend/dist/
+frontend/build/
+.vite/
+vite.config.js.timestamp-*
+vite.config.ts.timestamp-*
+
+
+# ─── TESTING ─────────────────────────────────────────────────
+coverage/
+.nyc_output/
+.jest/
+jest-results/
+playwright-report/
+playwright/.cache/
+test-results/
+
+
+# ─── DATABASE ────────────────────────────────────────────────
+*.db
+*.db-journal
+*.sqlite
+*.sqlite3
+*.dump
+*.backup
+*.sql
+
+
+# ─── DOCKER ──────────────────────────────────────────────────
+docker-compose.override.yml
+
+
+# ─── DEPLOYMENT ──────────────────────────────────────────────
+.vercel/
+.netlify/
+.railway/
+.serverless/
+
+
+# ─── VSCODE ──────────────────────────────────────────────────
+.vscode/*
+# !.vscode/settings.json
+# !.vscode/extensions.json
+# !.vscode/launch.json
+# !.vscode/tasks.json
+*.code-workspace
+
+
+# ─── JETBRAINS IDEs ──────────────────────────────────────────
+.idea/
+*.iml
+*.iws
+*.ipr
+
+
+# ─── WINDOWS (WSL on Windows 11) ─────────────────────────────
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+[Dd]esktop.ini
+$RECYCLE.BIN/
+*.lnk
+*.cab
+*.msi
+
+
+# ─── MACOS ───────────────────────────────────────────────────
+.DS_Store
+.AppleDouble
+.LSOverride
+._*
+.Spotlight-V100
+.Trashes
+
+
+# ─── LINUX / WSL ─────────────────────────────────────────────
+*~
+.fuse_hidden*
+.directory
+.Trash-*
+.nfs*
+
+
+# ─── LOCAL NOTES & SCRATCH ───────────────────────────────────
+notes/
+scratch/
+
+
+# ─── MISC ────────────────────────────────────────────────────
+*.bak
+*.backup
+*.old
+*.orig
+*.tmp
+*.temp
+tmp/
+temp/
+.tmp/
